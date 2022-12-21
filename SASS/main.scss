@@ -1,0 +1,86 @@
+// custom variables
+
+$primary: white;
+$secondary: #f8faff;
+$success: #55c97b;
+$info: #6666cc;
+$danger: #e42626;
+$light: #b1b1b1;
+$dark: #bebebe;
+
+// import bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// custom  styles
+
+.navbar {
+  height: 100vh;
+  max-width: 255px;
+}
+
+.navbar__nav-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.header__profile {
+  width: 256px;
+  max-height: 64px;
+  height: 100%;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 17px;
+}
+
+.header__profile-pic {
+  width: 46px;
+  height: 46px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.btn__create {
+  /* width: 185px; */
+  /*   height: 34px; */
+  padding: 12px 16px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn__create-plus {
+  margin-right: 12px;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.btn__icon {
+  max-width: 14px;
+  max-height: 14px;
+  margin-right: 14px;
+}
+
+.btn__redact {
+  /*  max-width: 200px;
+  max-height: 36px; */
+  width: 100%;
+  padding: 12px 16px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.store-table {
+  max-width: 1000px;
+}
+
+.table__buttons {
+  display: flex;
+  gap: 11px;
+}

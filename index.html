@@ -1,17 +1,237 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/css/main.min.css" rel="stylesheet" />
     <title>Work5 Web-Page</title>
-    <link
-      rel="stylesheet"
-      href="/node_modules/bootstrap/dist/css/bootstrap.css"
-    />
   </head>
-  <body>
-    <h1>Hello world</h1>
+  <body class="body bg-secondary">
+    <div class="page container-fluid">
+      <div class="row">
+        <nav
+          class="navbar flex-column col-2 align-items-start justify-content-start bg-primary"
+        >
+          <a href="#" class="navbar-brand">
+            <img src="./images/logo.png" alt="Work5" />
+          </a>
+          <div class="navbar-nav">
+            <a href="#" class="nav-item nav-link text-dark">
+              <img
+                src="./images/web-page-home.svg"
+                class="nav-icon navbar__nav-icon"
+              />
+              Главная</a
+            >
+            <a href="#" class="nav-item nav-link text-dark active">
+              <img
+                src="./images/shopping-cart.svg"
+                class="nav-icon navbar__nav-icon"
+              />
+              Мои магазины</a
+            >
+            <a href="#" class="nav-item nav-link text-dark">
+              <img
+                src="./images/megaphone.svg"
+                class="nav-icon navbar__nav-icon"
+              />
+              Промоматериалы</a
+            >
+            <a href="#" class="nav-item nav-link text-dark">
+              <img
+                src="./images/pie-chart.svg"
+                class="nav-icon navbar__nav-icon"
+              />
+              Статистика</a
+            >
+            <a href="#" class="nav-item nav-link text-dark">
+              <img
+                src="./images/wallet.svg"
+                class="nav-icon navbar__nav-icon"
+              />Баланс</a
+            >
+            <a href="#" class="nav-item nav-link text-dark">
+              <img
+                src="./images/profile.svg"
+                class="nav-icon navbar__nav-icon"
+              />Персональные данные</a
+            >
+            <a href="#" class="nav-item nav-link text-dark">
+              <img
+                src="./images/information.svg"
+                class="nav-icon navbar__nav-icon"
+              />
+              FAQ</a
+            >
+            <a href="#" class="nav-item nav-link text-dark">
+              <img
+                src="./images/music-and-multimedia.svg"
+                class="nav-icon navbar__nav-icon"
+              />Техподдержка</a
+            >
+            <a href="#" class="nav-item nav-link text-dark">
+              <img
+                src="./images/logout.svg"
+                class="nav-icon navbar__nav-icon"
+              />Выход</a
+            >
+          </div>
+        </nav>
+        <div class="container-fluid col">
+          <header class="header row justify-content-between">
+            <div class="pages col">
+              <a class="header-link text-dark text-decoration-none" href="#"
+                >Главная</a
+              >
+              <img
+                class="header-arrow"
+                width="7px"
+                src="./images/arrow-point-to-right.svg"
+              />
+              <a class="header-link text-dark text-decoration-none"
+                >Мои магазины</a
+              >
+            </div>
+            <nav class="nav col justify-content-end">
+              <a class="nav-item nav-link" href="#">
+                <img
+                  class="nav-image"
+                  src="./images/messages.png"
+                  alt="Сообщения"
+                />
+              </a>
+              <a class="nav-item nav-link bg-primary" href="#">
+                <div class="header__profile">
+                  <img
+                    class="header__profile-pic rounded-circle"
+                    src="./images/profile-pic.jpg"
+                    alt="Сообщения"
+                  />
+                  <p class="text-dark m-0 header__name">Максим Добжанский</p>
+                </div>
+              </a>
+            </nav>
+          </header>
+          <button class="btn__create btn btn-success">
+            <p class="text-primary m-0">
+              <span class="btn__create-plus">+</span>Создать свой магазин
+            </p>
+          </button>
+          <h2 class="title">Управление магазинами</h2>
+          <table class="table store-table bg-primary shadow-sm rounded-2">
+            <thead>
+              <tr>
+                <th>№</th>
+                <th>Название</th>
+                <th>Адрес</th>
+                <th>Действие</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>12345</td>
+                <td>Дипломная работа</td>
+                <td>http://www.work5.ru/services</td>
+                <td class="table__buttons">
+                  <button class="btn btn-success btn__redact">
+                    <img
+                      class="btn__icon"
+                      src="./images/pencil.svg"
+                      alt="Редактировать"
+                    />Редактировать
+                  </button>
+                  <button class="btn btn-light btn__redact">
+                    <img
+                      class="btn__icon"
+                      src="./images/cancel.svg"
+                      alt="Отмена редактирования"
+                    />Редактировать
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>12345</td>
+                <td>Дипломная работа</td>
+                <td>http://www.work5.ru/services</td>
+                <td class="table__buttons">
+                  <button class="btn btn-success btn__redact">
+                    <img
+                      class="btn__icon"
+                      src="./images/pencil.svg"
+                      alt="Редактировать"
+                    />Редактировать
+                  </button>
+                  <button class="btn btn-light btn__redact">
+                    <img
+                      class="btn__icon"
+                      src="./images/cancel.svg"
+                      alt="Отмена редактирования"
+                    />Редактировать
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- <table
+              class="table d-flex flex-column store-table bg-primary rounded-2 shadow-lg"
+            >
+              <thead>
+                <tr>
+                  <th>№</th>
+                  <th>Название</th>
+                  <th>Адрес</th>
+                  <th>Действие</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>12345</td>
+                  <td>Дипломная работа</td>
+                  <td>http://www.work5.ru/services</td>
+                  <td>
+                    <button class="btn btn-success btn__redact">
+                      <img
+                        class="btn__icon"
+                        src="./images/pencil.svg"
+                        alt="Редактировать"
+                      />Редактировать
+                    </button>
+                    <button class="btn btn-light btn__redact">
+                      <img
+                        class="btn__icon"
+                        src="./images/cancel.svg"
+                        alt="Отмена редактирования"
+                      />Редактировать
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>12345</td>
+                  <td>Дипломная работа</td>
+                  <td>http://www.work5.ru/services</td>
+                  <td>
+                    <button class="btn btn-success btn__redact">
+                      <img
+                        class="btn__icon"
+                        src="./images/pencil.svg"
+                        alt="Редактировать"
+                      />Редактировать
+                    </button>
+                    <button class="btn btn-light btn__redact">
+                      <img
+                        class="btn__icon"
+                        src="./images/cancel.svg"
+                        alt="Отмена редактирования"
+                      />Редактировать
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table> -->
+        </div>
+      </div>
+    </div>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </body>
 </html>
