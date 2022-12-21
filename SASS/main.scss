@@ -80,7 +80,36 @@ $dark: #bebebe;
   max-width: 1000px;
 }
 
-.table__buttons {
+.store-table__buttons {
   display: flex;
   gap: 11px;
+}
+
+.store-table__with-border {
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.form-select {
+  color: #7d7d7d;
+}
+
+.form__text-input {
+  background-color: #e6e6e9;
+  border: none;
+}
+
+.form__text-input:focus {
+  border: 2px solid #e6e6e9;
+}
+
+.form__warning-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.form__warning-text {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  color: #7d7d7d;
 }

@@ -113,13 +113,19 @@
               </a>
             </nav>
           </header>
-          <button class="btn__create btn btn-success">
+          <button
+            class="btn__create btn btn-success"
+            data-bs-toggle="modal"
+            data-bs-target="#modal"
+          >
             <p class="text-primary m-0">
               <span class="btn__create-plus">+</span>Создать свой магазин
             </p>
           </button>
           <h2 class="title">Управление магазинами</h2>
-          <table class="table store-table bg-primary shadow-sm rounded-2">
+          <table
+            class="table table-borderless store-table bg-primary shadow-sm rounded-2"
+          >
             <thead>
               <tr>
                 <th>№</th>
@@ -129,11 +135,11 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr class="store-table__with-border">
                 <td>12345</td>
                 <td>Дипломная работа</td>
                 <td>http://www.work5.ru/services</td>
-                <td class="table__buttons">
+                <td class="store-table__buttons">
                   <button class="btn btn-success btn__redact">
                     <img
                       class="btn__icon"
@@ -154,7 +160,7 @@
                 <td>12345</td>
                 <td>Дипломная работа</td>
                 <td>http://www.work5.ru/services</td>
-                <td class="table__buttons">
+                <td class="store-table__buttons">
                   <button class="btn btn-success btn__redact">
                     <img
                       class="btn__icon"
@@ -173,62 +179,76 @@
               </tr>
             </tbody>
           </table>
-          <!-- <table
-              class="table d-flex flex-column store-table bg-primary rounded-2 shadow-lg"
-            >
-              <thead>
-                <tr>
-                  <th>№</th>
-                  <th>Название</th>
-                  <th>Адрес</th>
-                  <th>Действие</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>12345</td>
-                  <td>Дипломная работа</td>
-                  <td>http://www.work5.ru/services</td>
-                  <td>
-                    <button class="btn btn-success btn__redact">
+          <!--     попап создания магазина -->
+          <div class="modal fade" id="modal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="title">Создать магазин</h2>
+                  <button
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    data-bs-target="#modal"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <form class="form">
+                    <div class="row">
+                      <div class="col-6">
+                        <label class="form-label" for="inputTemplate"
+                          >Шаблон</label
+                        >
+                        <select
+                          class="form-select bg-success"
+                          id="inputTemplate"
+                        >
+                          <option>Стандартный</option>
+                          <option>Стандартный 2</option>
+                        </select>
+                      </div>
+                      <div class="col-6">
+                        <label class="form-label" for="inputColor"
+                          >Цветовая схема</label
+                        >
+                        <select class="form-select bg-success" id="inputColor">
+                          <option>Классическая</option>
+                          <option>Классическая 2</option>
+                        </select>
+                      </div>
+                    </div>
+                    <label class="form-label" for="inputDomain">Домен</label>
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        class="form-control form__text-input"
+                        id="inputDomain"
+                        placeholder="Например: ivangrozniy"
+                      />
+                      <div class="input-group-text bg-info text-primary">
+                        .work5.ru
+                      </div>
+                    </div>
+                    <div class="row">
                       <img
-                        class="btn__icon"
-                        src="./images/pencil.svg"
-                        alt="Редактировать"
-                      />Редактировать
-                    </button>
-                    <button class="btn btn-light btn__redact">
-                      <img
-                        class="btn__icon"
-                        src="./images/cancel.svg"
-                        alt="Отмена редактирования"
-                      />Редактировать
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>12345</td>
-                  <td>Дипломная работа</td>
-                  <td>http://www.work5.ru/services</td>
-                  <td>
-                    <button class="btn btn-success btn__redact">
-                      <img
-                        class="btn__icon"
-                        src="./images/pencil.svg"
-                        alt="Редактировать"
-                      />Редактировать
-                    </button>
-                    <button class="btn btn-light btn__redact">
-                      <img
-                        class="btn__icon"
-                        src="./images/cancel.svg"
-                        alt="Отмена редактирования"
-                      />Редактировать
-                    </button>
-                  </td>
-                </tr>
-              </tbody>
-            </table> -->
+                        class="col form__warning-img"
+                        alt="Предупреждение"
+                        src="./images/warning.svg"
+                      />
+                      <p class="col form__warning-text">
+                        В названии домена разрешены латиница и “-”, запрещается
+                        использовать словосочетание Work 5. После создания
+                        магазина Вы сможете прикрутить свой домен (например
+                        ivangrozniy.ru). Подробнее по
+                        <a class="text-info text-decoration-none" href="#"
+                          >ссылке</a
+                        >
+                      </p>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
