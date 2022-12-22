@@ -13,64 +13,64 @@
         <nav
           class="navbar flex-column col-2 align-items-start justify-content-start bg-primary"
         >
-          <a href="#" class="navbar-brand">
+          <a href="#" class="navbar-brand py-0 px-4">
             <img src="./images/logo.png" alt="Work5" />
           </a>
-          <div class="navbar-nav">
-            <a href="#" class="nav-item nav-link text-dark">
+          <div class="navbar-nav py-4">
+            <a href="#" class="nav-item nav-item__left nav-link px-4">
               <img
                 src="./images/web-page-home.svg"
                 class="nav-icon navbar__nav-icon"
               />
               Главная</a
             >
-            <a href="#" class="nav-item nav-link text-dark active">
+            <a href="#" class="nav-item nav-item__left nav-link active px-4">
               <img
                 src="./images/shopping-cart.svg"
                 class="nav-icon navbar__nav-icon"
               />
               Мои магазины</a
             >
-            <a href="#" class="nav-item nav-link text-dark">
+            <a href="#" class="nav-item nav-item__left nav-link px-4">
               <img
                 src="./images/megaphone.svg"
                 class="nav-icon navbar__nav-icon"
               />
               Промоматериалы</a
             >
-            <a href="#" class="nav-item nav-link text-dark">
+            <a href="#" class="nav-item nav-item__left nav-link px-4">
               <img
                 src="./images/pie-chart.svg"
                 class="nav-icon navbar__nav-icon"
               />
               Статистика</a
             >
-            <a href="#" class="nav-item nav-link text-dark">
+            <a href="#" class="nav-item nav-item__left nav-link px-4">
               <img
                 src="./images/wallet.svg"
                 class="nav-icon navbar__nav-icon"
               />Баланс</a
             >
-            <a href="#" class="nav-item nav-link text-dark">
+            <a href="#" class="nav-item nav-item__left nav-link px-4">
               <img
                 src="./images/profile.svg"
                 class="nav-icon navbar__nav-icon"
               />Персональные данные</a
             >
-            <a href="#" class="nav-item nav-link text-dark">
+            <a href="#" class="nav-item nav-item__left nav-link px-4">
               <img
                 src="./images/information.svg"
                 class="nav-icon navbar__nav-icon"
               />
               FAQ</a
             >
-            <a href="#" class="nav-item nav-link text-dark">
+            <a href="#" class="nav-item nav-item__left nav-link px-4">
               <img
                 src="./images/music-and-multimedia.svg"
                 class="nav-icon navbar__nav-icon"
               />Техподдержка</a
             >
-            <a href="#" class="nav-item nav-link text-dark">
+            <a href="#" class="nav-item nav-item__left nav-link px-4">
               <img
                 src="./images/logout.svg"
                 class="nav-icon navbar__nav-icon"
@@ -78,37 +78,42 @@
             >
           </div>
         </nav>
-        <div class="container-fluid col">
+        <div class="container-fluid col main-content">
           <header class="header row justify-content-between">
             <div class="pages col">
-              <a class="header-link text-dark text-decoration-none" href="#"
+              <a class="header-link header__link text-decoration-none" href="#"
                 >Главная</a
               >
               <img
-                class="header-arrow"
+                class="header__arrow"
                 width="7px"
                 src="./images/arrow-point-to-right.svg"
               />
-              <a class="header-link text-dark text-decoration-none"
+              <a class="header-link header__link text-decoration-none"
                 >Мои магазины</a
               >
             </div>
-            <nav class="nav col justify-content-end">
-              <a class="nav-item nav-link" href="#">
+            <nav class="nav col header__nav">
+              <a class="nav-item nav-link p-0" href="#">
                 <img
                   class="nav-image"
                   src="./images/messages.png"
                   alt="Сообщения"
                 />
               </a>
-              <a class="nav-item nav-link bg-primary" href="#">
-                <div class="header__profile">
+              <a
+                class="nav-item nav-link bg-primary header__profile rounded-2"
+                href="#"
+              >
+                <div class="row header__profile-container">
                   <img
-                    class="header__profile-pic rounded-circle"
+                    class="header__profile-pic rounded-circle col-1"
                     src="./images/profile-pic.jpg"
                     alt="Сообщения"
                   />
-                  <p class="text-dark m-0 header__name">Максим Добжанский</p>
+                  <p class="header__name text-dark m-0 p-0 col">
+                    Максим Добжанский
+                  </p>
                 </div>
               </a>
             </nav>
@@ -122,32 +127,34 @@
               <span class="btn__create-plus">+</span>Создать свой магазин
             </p>
           </button>
-          <h2 class="title">Управление магазинами</h2>
+          <h2 class="main-content__subtitle">Управление магазинами</h2>
           <table
             class="table table-borderless store-table bg-primary shadow-sm rounded-2"
           >
             <thead>
               <tr>
-                <th>№</th>
-                <th>Название</th>
-                <th>Адрес</th>
-                <th>Действие</th>
+                <th class="p-0">№</th>
+                <th class="p-0">Название</th>
+                <th class="p-0">Адрес</th>
+                <th class="p-0">Действие</th>
               </tr>
             </thead>
             <tbody>
               <tr class="store-table__with-border">
-                <td>12345</td>
-                <td>Дипломная работа</td>
-                <td>http://www.work5.ru/services</td>
+                <td class="store-table__item p-0">12345</td>
+                <td class="store-table__item p-0">Дипломная работа</td>
+                <td class="store-table__item p-0">
+                  http://www.work5.ru/services
+                </td>
                 <td class="store-table__buttons">
-                  <button class="btn btn-success btn__redact">
+                  <button class="btn btn-success text-primary btn__redact">
                     <img
                       class="btn__icon"
                       src="./images/pencil.svg"
                       alt="Редактировать"
                     />Редактировать
                   </button>
-                  <button class="btn btn-light btn__redact">
+                  <button class="btn btn-light text-primary btn__redact">
                     <img
                       class="btn__icon"
                       src="./images/cancel.svg"
@@ -157,18 +164,20 @@
                 </td>
               </tr>
               <tr>
-                <td>12345</td>
-                <td>Дипломная работа</td>
-                <td>http://www.work5.ru/services</td>
+                <td class="store-table__item p-0">12345</td>
+                <td class="store-table__item p-0">Дипломная работа</td>
+                <td class="store-table__item p-0">
+                  http://www.work5.ru/services
+                </td>
                 <td class="store-table__buttons">
-                  <button class="btn btn-success btn__redact">
+                  <button class="btn btn-success text-primary btn__redact">
                     <img
                       class="btn__icon"
                       src="./images/pencil.svg"
                       alt="Редактировать"
                     />Редактировать
                   </button>
-                  <button class="btn btn-light btn__redact">
+                  <button class="btn btn-light text-primary btn__redact">
                     <img
                       class="btn__icon"
                       src="./images/cancel.svg"
@@ -243,6 +252,19 @@
                           >ссылке</a
                         >
                       </p>
+                    </div>
+                    <div class="form__buttons flex-row">
+                      <button
+                        type="button"
+                        class="btn bg-light text-primary"
+                        data-bs-dismiss="modal"
+                        data-bs-target="#modal"
+                      >
+                        Отмена
+                      </button>
+                      <button type="submit" class="btn bg-success text-primary">
+                        Создать
+                      </button>
                     </div>
                   </form>
                 </div>

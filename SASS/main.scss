@@ -11,41 +11,99 @@ $dark: #bebebe;
 // import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+/*шрифты*/
+
+@import url("../vendor/fonts/fonts.css");
+
 // custom  styles
+
+body {
+  font-family: Roboto, "Arial", sans-serif;
+}
 
 .navbar {
   height: 100vh;
-  max-width: 255px;
+  width: 260px;
 }
 
 .navbar__nav-icon {
   width: 20px;
   height: 20px;
+  object-fit: contain;
+  filter: invert(86%) sepia(0%) saturate(63%) hue-rotate(145deg) brightness(94%)
+    contrast(80%);
+  margin-right: 21px;
+}
+
+.nav-item__left {
+  width: 100%;
+  color: $dark;
+}
+
+.nav-item__left.active {
+  box-sizing: border-box;
+  border-left: 4px solid $info;
+  color: #000;
+}
+
+.nav-item__left.active > .navbar__nav-icon {
+  filter: invert(41%) sepia(68%) saturate(502%) hue-rotate(200deg)
+    brightness(92%) contrast(87%);
+}
+
+.main-content {
+  padding: 22px 16px 22px 60px;
+}
+
+.header__link {
+  color: #656565;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
 }
 
 .header__profile {
-  width: 256px;
+  box-sizing: border-box;
+  width: 257px;
   max-height: 64px;
-  height: 100%;
-  padding: 0 16px;
+  padding: 10px 16px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
+  gap: 17px;
+}
+
+.header__profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
   gap: 17px;
 }
 
 .header__profile-pic {
+  padding: 0;
   width: 46px;
   height: 46px;
   object-fit: cover;
   object-position: center;
 }
 
+.header__name {
+  font-family: Roboto, "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
 .btn__create {
   /* width: 185px; */
-  /*   height: 34px; */
+  height: 38px;
   padding: 12px 16px;
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: Roboto, "Arial", sans-serif;
   font-size: 16px;
   display: flex;
   align-items: center;
@@ -54,8 +112,16 @@ $dark: #bebebe;
 
 .btn__create-plus {
   margin-right: 12px;
-  font-weight: 700;
-  font-size: 26px;
+  font-family: Roboto, "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.main-content__subtitle {
+  font-family: Roboto, "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 37px 0 32px;
 }
 
 .btn__icon {
@@ -69,7 +135,7 @@ $dark: #bebebe;
   max-height: 36px; */
   width: 100%;
   padding: 12px 16px;
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: Roboto, "Arial", sans-serif;
   font-size: 16px;
   display: flex;
   align-items: center;
@@ -78,6 +144,13 @@ $dark: #bebebe;
 
 .store-table {
   max-width: 1000px;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 31px;
+}
+
+.store-table__item {
+  vertical-align: middle;
 }
 
 .store-table__buttons {
@@ -86,7 +159,13 @@ $dark: #bebebe;
 }
 
 .store-table__with-border {
-  border-bottom: 1px solid #e4e4e4;
+  border-bottom: 2px solid #e4e4e4;
+}
+
+.store-table__border {
+  width: 100%;
+  height: 1px;
+  color: #e4e4e4;
 }
 
 .form-select {
@@ -109,7 +188,7 @@ $dark: #bebebe;
 }
 
 .form__warning-text {
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: Roboto, "Arial", sans-serif;
   font-size: 16px;
   color: #7d7d7d;
 }
