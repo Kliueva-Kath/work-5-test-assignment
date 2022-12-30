@@ -114,12 +114,12 @@ body {
   margin-right: 12px;
   font-family: Roboto, "Arial", sans-serif;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 26px;
 }
 
 .main-content__subtitle {
   font-family: Roboto, "Arial", sans-serif;
-  font-size: 20px;
+  font-size: 26px;
   font-weight: 500;
   margin: 37px 0 32px;
 }
@@ -175,10 +175,17 @@ body {
 .form__text-input {
   background-color: #e6e6e9;
   border: none;
+  font-family: Roboto, "Arial", sans-serif;
+  font-size: 16px;
 }
 
 .form__text-input:focus {
   border: 2px solid #e6e6e9;
+}
+
+.form__warning {
+  display: flex;
+  gap: 17px;
 }
 
 .form__warning-img {
@@ -191,4 +198,31 @@ body {
   font-family: Roboto, "Arial", sans-serif;
   font-size: 16px;
   color: #7d7d7d;
+}
+
+.modal-content {
+  padding: 0 19px 35px 30px;
+  width: 616px;
+}
+
+.modal__title {
+  font-family: Roboto, "Arial", sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  margin: 40px 0 53px;
+}
+
+.modal-header {
+  border: none;
+}
+
+.form-label {
+  font-family: Roboto, "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.form-select {
+  font-family: Roboto, "Arial", sans-serif;
+  font-size: 16px;
 }
